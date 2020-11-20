@@ -1,0 +1,193 @@
+#PageHeader {
+    height: 90px;
+    background-color: white;
+}
+
+ul#HorizontalList {
+    float: right;
+    margin-right: 5%;
+}
+
+ul#HorizontalList li {
+    display: inline;
+}
+
+.HeaderButton {
+    text-decoration: none;
+    padding: 30px 10px;
+    margin: 0px 0px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #34ebe1;
+}
+
+.HeaderButton:hover {
+    color: #3486eb;
+}
+
+#logo {
+    position: absolute;
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #34ebe1;
+    border-radius: 0px 0px 15px 0px;
+}
+
+#user_info {
+    font-weight: bolder;
+    color: #34ebe1;
+    /* background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0)); */
+}
+
+#user_info:hover {
+    color: #3486eb;
+}
+
+#Wrapper {
+    width: 90%;
+    margin: auto;
+    background-color: #dbdbdb;
+    border-radius: 0px 0px 15px 15px;
+    padding: 40px 40px;
+    min-height: 90%;
+    font-size: 30px;
+}
+
+body {
+    margin: 0px;
+    background-color: #34ebe1;
+}
+
+.doubledivs {
+    width: 50%;
+    border: lightskyblue 1px;
+    padding: 3% 3% 3% 3%;
+    margin: 10% 0%;
+    display: inline;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 50px;
+    list-style: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a.doubledivs {
+    border-radius: 10px 40px 10px 40px;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #34ebe9;
+}
+
+a.doubledivs:hover {
+    color: white;
+}
+
+#inner-div {
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    border: 1px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+input[type=submit] {
+    background-color: #d2b0ff;
+    cursor: pointer;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: blue;
+}
+
+.indexButton {
+    text-decoration: none;
+    padding: 30px 10px;
+    margin: 0px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 200;
+    color: black;
+}
+
+#devinfo {
+    margin: 60px;
+    line-height: 40px;
+}
+
+
+/*loginsignup style*/
+
+.success {
+    font-size: 14px;
+    background: #dee2f2;
+    color: #4942a9;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.error {
+    font-size: 14px;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.chesstext {
+    border: #34ebe1 1px;
+    padding: 5% 5% 5% 5%;
+    margin: 0%;
+    display: inline;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 30px;
+    list-style: none;
+    border-radius: 10px;
+}
+
+#game {
+    width: 60%;
+    height: 40%;
+}
+
+#playlist {
+    width: 18%;
+    height: 40%;
+    float: right;
+    overflow: auto;
+}
+
+#chat {
+    width: 60%;
+    margin-top: 1%;
+}
+
+ul#footer {
+    text-align: center;
+}
+
+ul#footer li {
+    padding: 10px 15px;
+    display: inline;
+}
