@@ -2,15 +2,20 @@
   session_start();
   require_once 'Dao.php';
 ?>
+<?php include_once("header.php"); ?>
 
-<?php include_once("header2.php"); ?>
+<?php
+if (isset($_SESSION['username'])){
+header("Location: home.php");
+        }else{
+        } ?>
 
   <body>
-    <?php include_once("header.php"); ?>
+    <!-- <?php include_once("header.php"); ?> -->
     <div id="wrapper">
       <div id="inner-div">
         <div id="login" class="doubledivs">
-          <label>Login</label>
+          <label id = "log" >Login</label>
           <?php
           //Error iteration for Signup
           foreach ($_SESSION['bad-login'] as $message) {
@@ -30,14 +35,14 @@
           ?>
             
           <form method="POST" id="loginform" action="login_handler.php">
-          <input type="text" value="<?php echo $log_name; ?>" id="login-username" name="login-username" placeholder="username. For test, enter 12345678">
-          <input type="password" value="<?php echo $log_pass; ?>" id="login-password" name="login-password" placeholder="password. For test, enter 12345678">
+          <input type="text" value="<?php echo $log_name; ?>" id="login-username" name="login-username" placeholder="username">
+          <input type="password" value="<?php echo $log_pass; ?>" id="login-password" name="login-password" placeholder="password">
           <input type="submit" value="Submit">
           </form>
         </div>
 
         <div id="signup" class="doubledivs">
-          <label>Sign Up</label>
+          <label id = "sign">Sign Up</label>
           <?php
           //Error iteration for Signup
           foreach ($_SESSION['bad-signup'] as $message) {

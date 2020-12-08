@@ -1,3 +1,8 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: auto;
+}
+
 #PageHeader {
     height: 90px;
     background-color: white;
@@ -30,12 +35,11 @@ ul#HorizontalList li {
     position: absolute;
     text-decoration: none;
     float: left;
-    color: white;
+    color: black;
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
     padding: 5px 10px;
-    background-color: #34ebe1;
     border-radius: 0px 0px 15px 0px;
 }
 
@@ -52,7 +56,7 @@ ul#HorizontalList li {
 #Wrapper {
     width: 90%;
     margin: auto;
-    background-color: #dbdbdb;
+    background-color: white;
     border-radius: 0px 0px 15px 15px;
     padding: 40px 40px;
     min-height: 90%;
@@ -61,7 +65,7 @@ ul#HorizontalList li {
 
 body {
     margin: 0px;
-    background-color: #34ebe1;
+    background-color: black;
 }
 
 .doubledivs {
@@ -84,7 +88,7 @@ a.doubledivs {
     font-size: 50px;
     text-decoration: none;
     color: white;
-    background-color: #34ebe9;
+    background-color: black;
 }
 
 a.doubledivs:hover {
@@ -106,9 +110,9 @@ input {
 }
 
 input[type=submit] {
-    background-color: #d2b0ff;
+    background-color: white;
     cursor: pointer;
-    color: white;
+    color: blue;
 }
 
 input[type=submit]:hover {
@@ -135,7 +139,7 @@ input[type=submit]:hover {
 
 .success {
     font-size: 14px;
-    background: #dee2f2;
+    background: white;
     color: #4942a9;
     padding: 10px;
     width: 95%;
@@ -145,7 +149,7 @@ input[type=submit]:hover {
 
 .error {
     font-size: 14px;
-    background: #F2DEDE;
+    background: white;
     color: #A94442;
     padding: 10px;
     width: 95%;
@@ -154,7 +158,7 @@ input[type=submit]:hover {
 }
 
 .chesstext {
-    border: #34ebe1 1px;
+    border: black 1px;
     padding: 5% 5% 5% 5%;
     margin: 0%;
     display: inline;

@@ -50,11 +50,11 @@ if(!empty($result1)){
 
 if (count($_SESSION['bad-signup']) > 0) {
     $_SESSION['submit_attempt']= $_POST;
-    header("Location: loginsignup.php");
+    header("Location: ls.php");
     exit();
   }
   unset($_SESSION['submit_attempt']);
 
     $dao->createUser($email, $user, $password);
-    header("Location: loginsignup.php?signup_success=Account created! Please Log in now!");
+    header("Location: ls.php?signup_success=Account created! Please Log in now!");
     exit();

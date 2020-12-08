@@ -21,9 +21,12 @@ class Dao {
         $conn=$this->getConnection();
         $saveInput = "INSERT INTO user (username, email, password) VALUES (:username, :email, :password);";
 		$stmt=$conn->prepare($saveInput);
-		$stmt->bindParam(":username", $user);
+        $stmt->bindParam(":username", $user);
+         $encrypt = md5($pass);
+         $encrypt = $encrypt . "cquiSQfwefcyC";
+         $stmt->bindParam(":password", $encrypt);
 		$stmt->bindParam(":email", $email);
-		$stmt->bindParam(":password", $pass);
+		
 		$stmt->execute();
     }
     
@@ -54,7 +57,9 @@ class Dao {
         $conn=$this->getConnection();
         $stmt=$conn->prepare("SELECT * FROM user WHERE username=:username AND password=:password");
         $stmt->bindParam(":username", $user);
-        $stmt->bindParam(":password", $pass);
+         $encrypt = md5($pass);
+         $encrypt = $encrypt . "cquiSQfwefcyC";
+        $stmt->bindParam(":password", $encrypt);
         $stmt ->execute();
         $retUser = $stmt->fetch(PDO::FETCH_ASSOC);
         return $retUser;

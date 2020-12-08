@@ -3,12 +3,10 @@ session_start();
 require_once 'Dao.php';
 ?>
 
-<?php include_once("header2.php"); ?>
+<?php include_once("header.php"); ?>
 
   <body>
-    <?php
-    include_once("header.php");
-    ?>
+  
     <div id="wrapper">
       <div id="game" class="chesstext">
           chess match here
