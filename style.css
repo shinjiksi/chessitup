@@ -46,7 +46,6 @@ ul#HorizontalList li {
 #user_info {
     font-weight: bolder;
     color: #34ebe1;
-    /* background-image: linear-gradient(-100deg, rgba(255, 255, 255, 0), yellow 85%, rgba(255, 255, 255, 0)); */
 }
 
 #user_info:hover {
@@ -129,14 +128,6 @@ input[type=submit]:hover {
     color: black;
 }
 
-#devinfo {
-    margin: 60px;
-    line-height: 40px;
-}
-
-
-/*loginsignup style*/
-
 .success {
     font-size: 14px;
     background: white;
@@ -175,12 +166,7 @@ input[type=submit]:hover {
     height: 40%;
 }
 
-#playlist {
-    width: 18%;
-    height: 40%;
-    float: right;
-    overflow: auto;
-}
+
 
 #chat {
     width: 60%;
